@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+      
+         <style>
+            .container{
+                width: 38%;
+                border: 1px solid black;
+                margin: auto;
+                padding: 20px;
+               font-size: 18px;
+            }
+            #myform label tr td input{
+            font-size: 20px;}
+         
+            .pass{
+                 width: 38%;
+               
+                margin: auto;
+                padding: 20px;
+               font-size: 18px;
+            }
+        </style>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+      <div class=pass>
+        <h1> Welcome to Password Generator </h1>
+      </div>
+        <div class="container">
+            <form id="myform" action="PasswordGeneratorServlet" method="post"  >
+         
+                <table>
+              
+                         <tr>
+                    <td> Select password length </td>
+                    
+                    <td>  
+                <select name="password_length">
+              
+                    <option value="4">4 </option>
+                    <option value="5">5 </option>
+                    <option value="6">6 </option>
+                    <option value="7">7 </option>
+                    <option value="8">8 </option>
+                    <option value="9">9 </option>
+                    <option value="10">10 </option>
+                    <option value="11">11 </option>
+                    <option value="12">12 </option>
+                    <option value="16">16 </option>
+                    <option value="32">32 </option>
+                    <option value="64">64 </option>
+                    <option value="128">128 </option>
+                    <option value="256">256 </option>
+                    <option value="512">512 </option>
+                    <option value="1024">1024 </option>
+                
+                </select>
+                </td>
+                </tr>
+                
+
+                   <tr>
+                    
+                    <td>
+                        Include Numbers :
+                    </td>
+                    <td style="text-align: right">
+                        <input type="checkbox" value="checked" name="number"/>
+                    </td>
+                 
+                </tr>
+                
+                   <tr>
+                    
+                    <td>
+                        Include Symbols :
+                    </td>
+                    <td style="text-align: right">
+                        <input type="checkbox" value="checked" name="symbols"/>
+                    </td>
+                 
+                </tr>
+                
+                  
+                   <tr>
+                    
+                    <td>
+                        Include Lowercase Characters :
+                    </td>
+                    <td style="text-align: right">
+                        <input type="checkbox" value="checked" name="lowercase"/>
+                    </td>
+                 
+                </tr>
+                      <tr>
+                    
+                    <td>
+                        Include Uppercase Characters :
+                    </td>
+                    <td style="text-align: right">
+                        <input type="checkbox" value="checked" name="uppercase"/>
+                    </td>
+                 
+                </tr>
+                
+                
+                <tr style="text-align: right">
+                
+                    <td>
+                        <button type="submit"> Generate Password </button>
+                        <button type="reset"> Reset</button>
+                    </td>
+                  
+                 
+                </tr>
+                
+                
+                    
+                </table>
+            </form>
+            
+            
+            
+            
+        </div>
+    </body>
+</html>
