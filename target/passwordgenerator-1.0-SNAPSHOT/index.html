@@ -22,21 +22,34 @@
                font-size: 18px;
             }
         </style>
+        
+          <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+          
           <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
+       
       <div class=pass>
-        <h1> Welcome to Password Generator </h1>
+        <h3> Welcome to Password Generator </h3>
       </div>
-        <div class="container">
+        
+         <div class="row">
+       <div class="col s4 offset-s4">
+        
+        
             <form id="myform" action="PasswordGeneratorServlet" method="post"  >
          
                 <table>
               
                          <tr>
-                    <td> Select password length </td>
+                    <td> Select password length : </td>
                     
                     <td>  
+                  
                 <select name="password_length">
               
                     <option value="4">4 </option>
@@ -57,6 +70,7 @@
                     <option value="1024">1024 </option>
                 
                 </select>
+                     
                 </td>
                 </tr>
                 
@@ -66,9 +80,16 @@
                     <td>
                         Include Numbers :
                     </td>
-                    <td style="text-align: right">
-                        <input type="checkbox" value="checked" name="number"/>
+                    <td>
+     <p>
+      <input type="checkbox" value="checked" name="number" id="number" checked="checked" />
+      <label for="number" > Numbers</label>
+    </p>
+                        
                     </td>
+                    
+                   
+                    
                  
                 </tr>
                 
@@ -76,9 +97,12 @@
                     
                     <td>
                         Include Symbols :
-                    </td>
-                    <td style="text-align: right">
-                        <input type="checkbox" value="checked" name="symbols"/>
+                    </td>                
+                     <td>
+                           <p>
+                             <input type="checkbox" value="checked" name="symbols" id="symbols" checked="checked" />
+                             <label for="symbols" > Symbols</label>
+                             </p>
                     </td>
                  
                 </tr>
@@ -89,9 +113,14 @@
                     <td>
                         Include Lowercase Characters :
                     </td>
-                    <td style="text-align: right">
-                        <input type="checkbox" value="checked" name="lowercase"/>
+                   
+                        <td>
+                           <p>
+                             <input type="checkbox" value="checked" name="lowercase" id="lowercase" checked="checked" />
+                             <label for="lowercase" > Lowercase</label>
+                             </p>
                     </td>
+                 
                  
                 </tr>
                       <tr>
@@ -99,8 +128,13 @@
                     <td>
                         Include Uppercase Characters :
                     </td>
-                    <td style="text-align: right">
-                        <input type="checkbox" value="checked" name="uppercase"/>
+              
+                    
+                         <td>
+                           <p>
+                             <input type="checkbox" value="checked" name="uppercase" id="uppercase" checked="checked" />
+                             <label for="uppercase" > Uppercase</label>
+                             </p>
                     </td>
                  
                 </tr>
@@ -109,8 +143,9 @@
                 <tr style="text-align: right">
                 
                     <td>
-                        <button type="submit"> Generate Password </button>
-                        <button type="reset"> Reset</button>
+                       
+                        <button type="submit"><a class="waves-effect waves-light btn">Generator</a></button>
+                        <button type="reset"><a class="waves-effect waves-light btn">Reset</a></button>
                     </td>
                   
                  
@@ -123,7 +158,12 @@
             
             
             
-            
+            </div>
         </div>
+         
+    
     </body>
 </html>
+
+
+
